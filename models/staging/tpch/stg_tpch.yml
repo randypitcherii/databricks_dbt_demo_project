@@ -5,6 +5,7 @@ models:
     description: staging layer for customers data
     columns:
       - name: customer_key
+        description: unique key for customer
         tests:
           - unique
           - not_null
