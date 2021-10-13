@@ -1,0 +1,19 @@
+version: 2
+
+exposures:
+  - name: monthly_gross_revenue
+    description: >
+      Dashboard showing monthly gross revenue
+    tags: ['logistics']
+    
+    type: dashboard 
+    url: https://dbc-01db0449-2976.cloud.databricks.com/sql/dashboards/6f13f2c2-2e4a-44fb-bd44-8e3045b935ba-2021-10-07----tpch---monthly-revenue?o=4692754441460258
+    
+    maturity: medium
+    
+    owner:
+      name: Randy Pitcher
+      email: randy.pitcher@fishtownanalytics.com
+
+    depends_on:
+      - ref('monthly_gross_revenue')
