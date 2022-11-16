@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: tpch
+    catalog: external_storage
     schema: tpch
     tables:
       - name: orders

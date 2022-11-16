@@ -1,6 +1,6 @@
 config-version: 2
 
-name: 'databricks_tpch'
+name: 'retail'
 version: '1.0.0'
 
 dispatch:
@@ -11,4 +11,10 @@ models:
   databricks_tpch:
     marts:
       materialized: table
+
+seeds:
+  retail:
+    +tags: ['retail']
+    lineitem:
+      +enabled: False
     
